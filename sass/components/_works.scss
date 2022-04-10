@@ -1,0 +1,33 @@
+.works {
+  padding-top: 0px;
+}
+
+  .works__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 370px;
+    padding: 27px 85px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    color: $color-bcg-site;
+    background-color: $color-works-transparent-blackout;
+  }
+
+  .works__item {
+    position: relative;
+    flex-basis: calc(100% - (3 * 30px) / 3);
+  }
+
+  .works__images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .works__title {
+@extend .team__title;
+  }
