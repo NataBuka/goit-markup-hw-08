@@ -1,5 +1,8 @@
 .works {
   padding-top: 0px;
+  @media  screen and(max-width:767px) {
+    display: none; 
+  }
 }
 
   .works__text {

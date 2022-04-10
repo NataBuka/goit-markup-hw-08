@@ -15,7 +15,7 @@
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
-    //text-align: center;
+    text-align: center;
   }
 }
 
@@ -29,9 +29,9 @@
       $color-hero-transparent-blackout,
       $color-hero-transparent-blackout
     ),
-    url("../images/background-Img.jpg");
+    url("..//../images/background-Img.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 /*button*/
 .button {
