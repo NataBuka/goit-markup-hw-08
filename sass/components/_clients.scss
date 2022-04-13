@@ -8,10 +8,11 @@
     flex-wrap: wrap;
   }
 
-  .vip__logo {
-    width: calc((100%-4*15px)/2);
+  .vip__link {
+    flex-basis: calc((100%-4*15px)/2);
     height: 92px;
   }
+
 
   .vip__link {
     padding: 16px 52px;
@@ -41,6 +42,11 @@
   .vip__logo:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
+
+ .vip__logo:nth-child(odd) {
+   margin-right: 15px;
+  // margin-left: 15px;
+ }
 
   .clients__title {
       @include cards__style-mobil();

@@ -133,7 +133,6 @@ img {
 }
 
 .background {
-  height: 400px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -337,8 +336,9 @@ img {
       flex-wrap: wrap;
 }
 
-.vip__logo {
-  width: calc((100%-4*15px)/2);
+.vip__link {
+  -ms-flex-preferred-size: calc((100%-4*15px)/2);
+      flex-basis: calc((100%-4*15px)/2);
   height: 92px;
 }
 
@@ -368,6 +368,10 @@ img {
 
 .vip__logo:nth-last-child(-n+2) {
   margin-bottom: 0;
+}
+
+.vip__logo:nth-child(odd) {
+  margin-right: 15px;
 }
 
 .clients__title {
@@ -412,6 +416,7 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
