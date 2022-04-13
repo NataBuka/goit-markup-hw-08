@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -27,7 +28,8 @@
       ),
       url("../images/background-Img.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
  
   .button {

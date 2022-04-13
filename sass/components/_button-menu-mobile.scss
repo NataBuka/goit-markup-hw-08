@@ -1,0 +1,34 @@
+.button__menu {
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+
+
+ & .button__menu__mobile__close {
+    //display: none;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ &.is-open .button__menu__mobile__close {
+   // display: block;
+   opacity: 1;
+   transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ &.is-open .button__menu__mobile__menu {
+   // display: none;
+   opacity: 0;
+   transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+}
+
+.button__menu {
+@media screen and(min-width:$tablet){
+   display: none;
+}
+}
