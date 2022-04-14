@@ -1,7 +1,27 @@
 .footer {
-    @media screen and(max-width:$tablet){
-        display: none;
-    }
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: $color-secondary-bcg-site;
+        color: $color-bcg-site;  
+      
 }
 
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
+  .footer-brand {
+    color: $color-bcg-site;
+  }  
+
+  .footer__relations {
+    margin-right: 124px;
+    
+
+    @media screen and(min-width: $tablet) {
+     margin-right: 76px;   
+        }  
+  }
+  

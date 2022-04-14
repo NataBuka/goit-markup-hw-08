@@ -6,6 +6,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body .open-modal {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -85,6 +89,7 @@ img {
 }
 
 .header {
+  position: relative;
   padding: 16px 0;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
@@ -143,6 +148,21 @@ img {
   .button__menu {
     display: none;
   }
+}
+
+.menu-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  padding: 48px 40px;
+  text-align: left;
+  width: 100%;
+  height: 796px;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -433,9 +453,30 @@ img {
   background-size: contain;
 }
 
-@media screen and (max-width: 768px) {
-  .footer {
-    display: none;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  color: #ffffff;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-brand {
+  color: #ffffff;
+}
+
+.footer__relations {
+  margin-right: 124px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__relations {
+    margin-right: 76px;
   }
 }
 
@@ -450,6 +491,13 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .backdrop {
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -458,15 +506,15 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
   background-color: #ffffff;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    position: relative;
+    padding: 40px;
+  }
 }
 
 .btn-close {
@@ -498,10 +546,8 @@ img {
 
 /* form start */
 .form {
-  width: 528px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
 }
 
 .form__title {
@@ -567,5 +613,194 @@ img {
           appearance: none;
   position: absolute;
   fill: #2196f3;
+}
+
+.form__input-koment:hover,
+.form__input-koment:focus,
+.form__input:focus,
+.form__input:hover {
+  border-color: #2196f3;
+  background-color: #ffffff;
+}
+
+textarea {
+  resize: none;
+}
+
+.form__item input {
+  margin: 0;
+  padding: 11;
+}
+
+.form__item label {
+  margin-bottom: 4px;
+}
+
+.form__item-koment .form__input-koment::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  -webkit-box-pack: start;
+          justify-content: start;
+}
+
+.form__item-koment .form__input-koment:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  -ms-flex-pack: start;
+      justify-content: start;
+}
+
+.form__item-koment .form__input-koment::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  -ms-flex-pack: start;
+      justify-content: start;
+}
+
+.form__item-koment .form__input-koment::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.form__input-koment:not(:placeholder-shown) {
+  color: #212121;
+}
+
+.form__input-koment {
+  outline: none;
+  cursor: pointer;
+  width: 370px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #212121;
+  -webkit-transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1600px) {
+  .form__input-koment {
+    width: 448px;
+  }
+}
+
+.check__email {
+  margin-left: 2px;
+  text-decoration: underline;
+  color: #2196f3;
+}
+
+.check {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+/*.chek .check__label {
+  margin-bottom: 4px;
+}*/
+.check__label {
+  display: block;
+  color: #757575;
+}
+
+.check__icon {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .check__icon {
+    left: 10px;
+  }
+}
+
+.check__input:checked + .check__icon {
+  background-color: #2196f3;
+  background-image: url("../images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check__input:focus + .check__icon {
+  border-color: #2196f3;
+}
+
+.check__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.check__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  text-align: left;
+}
+
+.form-button {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 56px;
+  text-align: center;
+}
+
+.form-button:hover {
+  background-color: #188ce8;
 }
 /*# sourceMappingURL=main.css.map */
