@@ -1,5 +1,6 @@
 .address {
     font-style: normal;
+    margin-bottom: 60px;
   
     &__link:hover,
     &__link:focus,
@@ -7,10 +8,6 @@
     &__map:focus {
       color: $color-brand;
     }
-
-    &__item:not(:last-child) {
-        margin-bottom: 8px;
-      }
 
     &__link {
         color: $color-secondary-text;
@@ -25,5 +22,13 @@
         color: $color-bcg-site;
         @extend .address__link;
         
+      }
+
+      .address__item {
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
       }
 }

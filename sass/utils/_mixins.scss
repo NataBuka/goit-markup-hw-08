@@ -20,3 +20,33 @@
     line-height: 1.18;
     text-align: center;
   }
+
+@mixin font($fs, $fw ,$lh) {
+font-size: $fs;
+font-weight: $fw;
+line-height: $lh;
+}  
+
+@mixin section-title-font() {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $color-title-text;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+@mixin footer-title-font() {
+    color: $color-bcg-site;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: center;
+    @media screen and(min-width:$desktop){
+     text-align: left; 
+    }
+    margin-bottom: 20px;
+  }
+  
