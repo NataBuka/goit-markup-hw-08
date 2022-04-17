@@ -1,6 +1,7 @@
 .navigation {
-    @media screen and(max-width:$tablet){
-        display: none;
+    position: relative;
+    @media screen and(min-width:$mobile){
+     display: none;   
     }
 }
 

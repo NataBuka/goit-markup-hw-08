@@ -2,19 +2,22 @@
     
 
 .menu-container {
+    display: none;
     position: absolute;
     left: 0;
     top: 0;
-    background-color: $color-bcg-site;
+    width: 100%;
+
+    height: 255px;
+    
     padding: 48px 40px;
     text-align: left;
-    width: 100%;
-    height: 76px;
-    //z-index: 1;
-   // display: none;
+    font-size: 20px;
+
+    background-color: $color-bcg-site;
 
     &.is-open {
-        display: block;
+    display: block;
     }
 
 }

@@ -14,17 +14,15 @@
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: $color-label-footer;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
+    @include font(16px,400,1.25);
     text-align: left;
 }
 
 .blank__input {
     padding-left: 16px;
-    width: 450px;
+    width: 100%;
     @media  screen and(min-windth:$tablet) {
-        width: 358px;
+      width: 358px;
     }
     height: 50px;
     border: 1px solid $color-label-footer;
