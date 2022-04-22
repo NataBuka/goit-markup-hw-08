@@ -97,11 +97,22 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
+  .header .header {
     padding: 21px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -332,14 +343,20 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-Img.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-Img.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("//images/hero-mobile1.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("//images/hero-mobile1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-.button {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .background .background {
+    background-image: url("//images/header-mobile2x.jpg");
+  }
+}
+
+.background .button {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2196f3;
@@ -357,7 +374,7 @@ img {
   text-align: center;
 }
 
-.button:hover {
+.background .button:hover {
   background-color: #188ce8;
 }
 

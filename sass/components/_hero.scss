@@ -26,11 +26,19 @@
         $color-hero-transparent-blackout,
         $color-hero-transparent-blackout
       ),
-      url("../images/background-Img.jpg");
+      url('//images/hero-mobile1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .background {
+    background-image: url('//images/header-mobile2x.jpg');
   }
+}
+  
  
   .button {
     @include button-style();
@@ -44,3 +52,4 @@
     background-color: $color-button;
     }
   }
+}

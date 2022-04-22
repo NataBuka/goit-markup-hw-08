@@ -2,10 +2,19 @@
     position: relative;
     padding: 16px 15px;
     @media screen and(min-width:$tablet){
-    padding: 21px 15px;   
-    display: flex; 
+        .header{    
+    padding: 21px 15px;
+        }   
     }
     border-bottom: 1px solid $color-header-line;
     background-color: $color-bcg-site;
+}
+
+.container-header {
+    @media screen and(min-width:$tablet){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
