@@ -50,3 +50,9 @@ line-height: $lh;
     margin-bottom: 20px;
   }
   
+@mixin button-mini() {
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  padding: 0;
+}

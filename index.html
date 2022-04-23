@@ -28,18 +28,7 @@
                 <a href="./index.html" class="logo link">
                     Web<span class="logo__text">Studio</span>
                 </a>
-               
-               
-
-                
-                <div class="menu-container" id="menu-container" data-menu>
-
-                <button type="button" class="button__menu">
-                    <svg class="button__menu__mobile" width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="button__menu__mobile__close" href="./images/sprite.svg#icon-close40px"></use>
-                    </svg>
-                </button>
-
+            
                 <ul class="navigation list">
                     <li class="navigation__item">
                         <a href="./index.html" class="navigation__link link current Studio">Студия</a>
@@ -48,7 +37,7 @@
                         <a href="./portfolio.html" class="navigation__link link">Портфолио</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="" class="navigation__link link">Контакты</a>
+                        <a href="./contacts.html" class="navigation__link link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -71,11 +60,56 @@
 
             </ul>
             <button type="button" class="button__menu" aria-expanded="false"
-            data-button-menu aria-controls="menu-container">
+            data-menu-open aria-controls="menu-container">
                 <svg class="button__menu__mobile" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="button__menu__mobile__menu" href="./images/sprite.svg#icon-menu40px"></use>
                 </svg>
             </button>
+
+        </div>
+        <div class="menu-container" id="menu-container" data-menu>
+        <div class="wrapper menu-container-wrapper">
+            <button type="button" class="button__menu-close" data-menu-close>
+                <svg class="button__menu__mobile" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="button__menu__mobile__close" href="./images/sprite.svg#icon-close40px"></use>
+                </svg>
+            </button>
+
+            <ul class="menu__list">
+                <li>
+                    <a class="menu__list__link  link" href="./index.html">Студия</a>
+                </li>
+                <li>
+                    <a class="menu__list__link  link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li>
+                    <a class="menu__list__link  link" href="./contacts.html">Контакты</a>
+                </li>
+            </ul>
+
+            <ul class="menu__contact">
+                <li>
+                    <a class="menu__contact__link  link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a class="menu__contact__link  link" href="mailtu:info@devstudio.com">info@devstudio.com</a>
+                </li>    
+            </ul>
+
+            <ul class="menu__social">
+                <li>
+                    <a class="menu__social__link  link">Instagram</a>
+                </li>
+                <li>
+                    <a class="menu__social__link  link">Twitter</a>
+                </li>
+                <li>
+                    <a class="menu__social__link  link">Facebook</a>
+                </li>
+                <li>
+                    <a class="menu__social__link  link">LinkedIn</a>
+                </li>
+            </ul>
         </div>
         </div>
     </header>
@@ -553,7 +587,9 @@
 
         document.body.style.paddingTop = `${headerHeight}px`;
     </script>-->
-   <script src="./js/button-menu-mobile.js"></script>
+    
+        
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

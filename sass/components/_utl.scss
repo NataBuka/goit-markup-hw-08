@@ -26,6 +26,8 @@ ol {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 img {
@@ -53,30 +55,24 @@ img {
 }
 
 .wrapper {
- // width: 480px;
   padding-right: 15px;
   padding-left: 15px;
-  //margin-right: auto;
-  //margin-left: auto;
-}
+
 
 @media screen and(min-width: $mobile){
-  .wrapper {
-  width: $mobile;
-  }
+  width: 448px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and(min-width: $tablet) {
-  .wrapper {
-    width: $tablet;
-  }
+    width: 738px;
 }
 
 @media screen and(min-width:$desktop) {
-  .wrapper {
-    width: $desktop;
-  }
+    width: 1170px;
 } 
+}
 
 .section {
     padding: 60px 0;

@@ -2,30 +2,27 @@
 
 .header {
     position: relative;
-    padding: 16px 15px;
+    padding: 10px 0;
     border-bottom: 1px solid $color-header-line;
     background-color: aqua;
 }
 
 @media screen and(min-width:$tablet){
     .header{    
-padding: 26px 15px;
+padding: 21px 0;
     }   
 }
 
 @media screen and(min-width:$desktop){
     .header{    
-padding: 24px 15px;
+padding: 24px 0;
     }   
 }
 
-@media screen and(min-width:$tablet){
-        .container-header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
 
 
