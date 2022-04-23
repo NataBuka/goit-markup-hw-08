@@ -4,7 +4,7 @@
   @include font(24px,700,1.17);
 
   @media screen and(min-width:$tablet){
-    margin-right: 88px;
+    margin-right: 50px;
     
   }
 
@@ -28,6 +28,9 @@
   bottom: 0;
   left: 0;
   transform: translatey(33px);
+  @media screen and(min-width:$desktop) {
+    transform: translatey(31px);
+  }
   content: "";
   width: 48px;
   height: 4px;
