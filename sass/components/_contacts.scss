@@ -19,7 +19,7 @@
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 50px;
-    color: $color-client-accent;
+    color: var(--color-client-accent);
     justify-content: center;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -27,8 +27,8 @@
 
        &:focus,
        &:hover {
-        color: $color-bcg-site;
-        background-color: $color-brand;   
+        color: var(--color-bcg-site);
+        background-color: var(--color-brand);   
         border-radius: 50%;
       }   
   }

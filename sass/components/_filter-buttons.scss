@@ -11,9 +11,9 @@
     display: inline-block;
     border-radius: 4px;
     padding: 6px 22px;
-    background-color: $color-portfolio-button;
+    background-color: var(--color-portfolio-button);
     border: none;
-    color: $color-title-text;
+    color: var(--color-title-text);
     cursor: pointer;
     font-family: inherit;
     @include font(16px,500,1.62);
@@ -21,9 +21,8 @@
 
    &:focus,
    &:hover {
-    background-color: $color-brand;
-    //border: $color-brand;
-    color: $color-bcg-site;
+    background-color: var(--color-brand);
+    color: var(--color-bcg-site);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }

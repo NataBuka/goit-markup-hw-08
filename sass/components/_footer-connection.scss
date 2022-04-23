@@ -29,7 +29,7 @@
 
     &:hover,
     &:focus {
-    background-color: $color-brand;
+    background-color: var(--color-brand);
     border-radius: 50%;
   }
 }
@@ -38,7 +38,7 @@
     display: flex;
     width: 20px;
     height: 20px;
-    fill: $color-bcg-site;
+    fill: var(--color-bcg-site);
   }
 
   .footer-headline{

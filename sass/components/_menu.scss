@@ -16,7 +16,7 @@
     pointer-events: none;
     text-align: left;
     font-size: 20px;
-    background-color: $color-bcg-site;
+    background-color: var(--color-bcg-site);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
@@ -33,14 +33,28 @@
     padding: 48px 0;
 }
 
-.menu__list__link {
+
+/*.menu__list__item {
     @include font(40px, 500, 1.17);
+    //display: block;
+    //margin-bottom: 32px;
+    //color: var(--color-title-text);
+}*/
+
+.menu__contact__link-tel {
+  @include font(34px, 500, 1.17);
+  margin-bottom: 32px;
+  color: var(--color-brand);
 }
 
-.menu__list__link:not(:last-child) {
-    margin-bottom: 32px;
+.menu__contact__link-imail {
+  @include font(24px, 500, 1.17);
+ // color: var(--color-text);
 }
 
+.menu__list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
 //@media screen and(min-width:$tablet) {
   // //    display: flex;
     //   justify-content: space-between;

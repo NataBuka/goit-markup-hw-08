@@ -284,10 +284,23 @@ img {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.17;
+  display: block;
+  margin-bottom: 32px;
+  color: #212121;
 }
 
-.menu__list__link:not(:last-child) {
+.menu__contact__link-tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
   margin-bottom: 32px;
+  color: #2196f3;
+}
+
+.menu__contact__link-imail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
 }
 
 @media screen and (max-width: 767px) {

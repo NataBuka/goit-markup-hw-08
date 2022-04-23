@@ -2,13 +2,13 @@
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-color: $color-secondary-bcg-site;
+    background-color: var(--color-secondary-bcg-site);
 
     &__title {
         margin-top: 0px;
         margin-bottom: 30px;
     
-        color: $color-bcg-site;
+        color: var(--color-bcg-site);
         text-transform: uppercase;
         font-weight: 900;
         font-size: 26px;
@@ -20,7 +20,7 @@
   .hero {
     text-align: center;
    // padding: 118px 204px;
-    background-color: $color-hero-bcg;
+    background-color: var(--color-hero-bcg);
   } 
 }
 
@@ -31,7 +31,7 @@
     
     margin-left: auto;
     margin-right: auto;
-    background-color: $color-hero-bcg;
+    background-color: var(--color-hero-bcg);
     background-image: linear-gradient(
         $color-hero-transparent-blackout,
         $color-hero-transparent-blackout
@@ -65,7 +65,7 @@
   
   
     &:hover {
-    background-color: $color-button;
+    background-color: var(--color-button);
     }
   }
 }
