@@ -56,24 +56,32 @@ img {
  // width: 480px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  @media screen and(min-width: $mobile){
+  //margin-right: auto;
+  //margin-left: auto;
+}
+
+@media screen and(min-width: $mobile){
+  .wrapper {
   width: $mobile;
-  }
-  @media screen and(min-width: $tablet) {
-  width: $tablet;
-  }
-  @media screen and(min-width:$desktop) {
-  width: $desktop;
-    //padding: 0 215px;
   }
 }
 
+@media screen and(min-width: $tablet) {
+  .wrapper {
+    width: $tablet;
+  }
+}
+
+@media screen and(min-width:$desktop) {
+  .wrapper {
+    width: $desktop;
+  }
+} 
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  @media screen and(min-width: $mobile){
     padding: 60px 0;
-    }
+    @media screen and(min-width: $desktop) {
+      padding: 94px 0;
+      }
+    
 }

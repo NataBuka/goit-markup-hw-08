@@ -14,6 +14,12 @@
     letter-spacing: 0.02em;
   }
 
+  @media screen and(min-width:768px) {
+    .connection {
+    @include font(14px, 500, 1.17);
+  } 
+}
+
   .connection__link {
     display: flex;
     margin-left: auto;
@@ -24,6 +30,13 @@
       fill: $color-brand;
     }
   }
+
+
+@media screen and(min-width:768px) {
+  .connection__item:not(:last-child){
+  margin-bottom: 10px;
+  }
+}
 
 .connection__item {
     margin-left: 50px;

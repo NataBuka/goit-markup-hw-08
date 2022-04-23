@@ -18,5 +18,13 @@
   color: $color-bcg-site;
 }  
 
+@media screen and(min-width:$tablet) {
+  .footer__link {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
+
   
   

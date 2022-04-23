@@ -12,7 +12,19 @@
 .site-nav {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    margin-right: auto; 
+}
+
+@media screen and(min-width:$tablet) {
+  .site-nav{
+  justify-content: space-between;
+  }
+}
+
+@media screen and(min-width:$desktop) {
+  .site-nav{
+  margin-right: 84px;
+  }
 }
 
 .navigation__item {
@@ -29,6 +41,14 @@
     text-decoration: none;
     @include font(14px, 500, 1.14);
     letter-spacing: 0.02em;
+  }
+
+  @media screen and(min-width:$tablet) {
+    .navigation__link {
+      @include font(14px, 500, 1.17);
+
+    } 
+    
   }
 
   

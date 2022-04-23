@@ -9,3 +9,26 @@
     font-family: Raleway, sans-serif;
   }
 }
+
+@media screen and(min-width:$tablet) {
+  .Studio {
+    position: relative;
+    margin-left: 86px; 
+
+}
+}
+
+@media screen and(min-width:$tablet) {
+.Studio::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translatey(20px);
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: $color-brand;
+}
+}

@@ -43,6 +43,10 @@
 
   .footer-headline{
     @include footer-title-font();
+    @media screen and(min-width:$tablet) {
+      line-height: 1.72;
+      
+    }
   }
 
   

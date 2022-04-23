@@ -1,5 +1,4 @@
 .hero {
-  //position: relative;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -16,9 +15,20 @@
         line-height: 1.62;
     }
 }
+
+@media screen and(min-width:$tablet){
+  .hero {
+    text-align: center;
+   // padding: 118px 204px;
+    background-color: $color-hero-bcg;
+  } 
+}
+
 .background {
     //height: 400px;
     max-width: 480px;
+
+    
     margin-left: auto;
     margin-right: auto;
     background-color: $color-hero-bcg;
@@ -26,19 +36,25 @@
         $color-hero-transparent-blackout,
         $color-hero-transparent-blackout
       ),
-      url('//images/hero-mobile1.jpg');
+      url('//images/hero-mobile.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    //background-position: center;
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .background {
     background-image: url('//images/header-mobile2x.jpg');
   }
 }
+
+@media screen and(min-width:$tablet) {
+  .background {
+    max-width: $tablet;
+     }
   
+}
  
   .button {
     @include button-style();

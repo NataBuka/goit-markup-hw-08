@@ -8,7 +8,10 @@
 .vip__logo {
   width: calc((100% - 4 * 15px) / 2);
   height: 92px;
-
+  @media screen and(min-width:$tablet) {
+    width: calc((100% - 6 * 15px) / 3);
+    
+  }
   & {
     margin-right: 15px;
     margin-left: 15px;
@@ -22,6 +25,9 @@
 
 .vip__link {
     padding: 16px 52px;
+    @media screen and(min-width:$tablet) {
+      padding: 16px 60px;
+    }
     display: flex;
     width: 100%;
     height: 100%;

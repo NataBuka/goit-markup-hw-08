@@ -1,20 +1,32 @@
+
+
 .header {
     position: relative;
     padding: 16px 15px;
-    @media screen and(min-width:$tablet){
-        .header{    
-    padding: 21px 15px;
-        }   
-    }
     border-bottom: 1px solid $color-header-line;
-    background-color: $color-bcg-site;
+    background-color: aqua;
 }
 
-.container-header {
-    @media screen and(min-width:$tablet){
+@media screen and(min-width:$tablet){
+    .header{    
+padding: 26px 15px;
+    }   
+}
+
+@media screen and(min-width:$desktop){
+    .header{    
+padding: 24px 15px;
+    }   
+}
+
+@media screen and(min-width:$tablet){
+        .container-header{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        
     }
 }
+
+
 
