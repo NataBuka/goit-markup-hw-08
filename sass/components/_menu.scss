@@ -33,27 +33,72 @@
     padding: 48px 0;
 }
 
+.menu__list {
+  margin-bottom: 306px;
+}
+.menu__list__link {
+    color: var(--color-title-text);
 
-/*.menu__list__item {
-    @include font(40px, 500, 1.17);
-    //display: block;
-    //margin-bottom: 32px;
-    //color: var(--color-title-text);
-}*/
+    &:focus,
+    &:hover {
+      color: var(--color-brand);
+    }
+}
 
-.menu__contact__link-tel {
-  @include font(34px, 500, 1.17);
+.menu__list__item {
+  @include font(40px, 500, 1.17);
+    color: var(--color-title-text);
+
+ &:not(:last-child) {
   margin-bottom: 32px;
+}
+}
+
+.menu__contact {
+  margin-bottom: 64px;
+}
+
+.menu__contact__item {
+  @include font(34px, 500, 1.17);
   color: var(--color-brand);
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .menu__contact__link-imail {
   @include font(24px, 500, 1.17);
- // color: var(--color-text);
+  color: var(--color-text);
 }
 
-.menu__list__item:not(:last-child) {
-  margin-bottom: 32px;
+.menu__social {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.menu__contact__link-tel {
+  color: var(--color-brand);
+}
+
+.menu__social__link {
+  color: var(--color-brand);
+}
+
+
+.menu__social__item {
+  @include font(18px, 500, 1.22);
+  color: var(--color-brand);
+  
+
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid var(--color-input-border);
+  }
+}
+
+.menu__social__item:not(:nth-child(1)) {
+  padding-left: 10px;
 }
 //@media screen and(min-width:$tablet) {
   // //    display: flex;

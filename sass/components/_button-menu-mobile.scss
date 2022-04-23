@@ -2,45 +2,29 @@
   
 
 .button__menu {
-   // display: inline-flex;
     @include button-mini();
-   // position: absolute;
     top: 10px;
     right: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   // @media screen and(min-width:$tablet){
-     //    display: none;
-     // }
-      
-     
-  //& .button__menu__mobile__close {
-    //display: none;
-   // opacity: 0;
-   // transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
- //&.is-open .button__menu__mobile__close {
-   // display: block;
- //  opacity: 1;
- //  transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
- //}
-
- //&.is-open .button__menu__mobile__menu {
-   // display: none;
-  // opacity: 0;
-  // transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
- //}
-//}
-
-//.button__menu:hover,
-//.button__menu:focus {
-//  fill: $color-brand;
-//}
-
+    &:focus,
+    &:hover {
+      fill: var(--color-brand);
+    }
+  
+    @media screen and(min-width:$tablet){
+         display: none;
+    }
+  } 
 
 .button__menu-close {
   position: absolute;
   top: 10px;
   right: 15px; 
   @include button-mini();
+
+  &:focus,
+  &:hover {
+    fill: var(--color-brand);
+  }
 }

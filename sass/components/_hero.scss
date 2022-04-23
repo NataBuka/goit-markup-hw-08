@@ -33,8 +33,8 @@
     margin-right: auto;
     background-color: var(--color-hero-bcg);
     background-image: linear-gradient(
-        $color-hero-transparent-blackout,
-        $color-hero-transparent-blackout
+        var(--color-hero-transparent-blackout),
+        var(--color-hero-transparent-blackout)
       ),
       url('//images/hero-mobile.jpg');
     background-repeat: no-repeat;
