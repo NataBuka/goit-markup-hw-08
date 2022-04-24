@@ -22,13 +22,11 @@
     <header class="header">
         <!--Навигация-->
         <div class="container-header wrapper">
-         
+
             <nav class="site-nav">
-               
                 <a href="./index.html" class="logo link">
                     Web<span class="logo__text">Studio</span>
                 </a>
-            
                 <ul class="navigation list">
                     <li class="navigation__item">
                         <a href="./index.html" class="navigation__link link current Studio">Студия</a>
@@ -37,11 +35,13 @@
                         <a href="./portfolio.html" class="navigation__link link">Портфолио</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./contacts.html" class="navigation__link link">Контакты</a>
+                        <a href="" class="navigation__link link">Контакты</a>
                     </li>
                 </ul>
             </nav>
-           
+
+
+
             <ul class="connection list">
 
                 <li class="connection__item">
@@ -59,75 +59,75 @@
                 </li>
 
             </ul>
-            <button type="button" class="button__menu" aria-expanded="false"
-            data-menu-open aria-controls="menu-container">
-                <svg class="button__menu__mobile" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="button__menu__mobile__menu" href="./images/sprite.svg#icon-menu40px"></use>
-                </svg>
-            </button>
+            
+           <button class="button__menu" type="button" data-menu-open>
+               <svg width="40" height="40">
+                   <use href="./images/sprite.svg#icon-menu"></use>
+               </svg>
+           </button>
 
         </div>
-        <div class="menu-container" id="menu-container" data-menu>
-        <div class="wrapper menu-container-wrapper">
-            <button type="button" class="button__menu-close" data-menu-close>
-                <svg class="button__menu__mobile" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="button__menu__mobile__close" href="./images/sprite.svg#icon-close40px"></use>
-                </svg>
-            </button>
-        
-            <ul class="menu__list">
-                <li class="menu__list__item">
-                    <a class="menu__list__link  link" href="./index.html">Студия</a>
-                </li>
-                <li class="menu__list__item">
-                    <a class="menu__list__link  link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="menu__list__item">
-                    <a class="menu__list__link  link" href="./contacts.html">Контакты</a>
-                </li>
-            </ul>
-        
-        
-            <ul class="menu__contact">
-                <li class="menu__contact__item">
-                    <a class="menu__contact__link-tel  link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="menu__contact__item">
-                    <a class="menu__contact__link-imail  link" href="mailtu:info@devstudio.com">info@devstudio.com</a>
-                </li>    
-            </ul>
-        
-            <ul class="menu__social">
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">Instagram</a>
-                </li>
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">Twitter</a>
-                </li>
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">Facebook</a>
-                </li>
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">LinkedIn</a>
-                </li>
-            </ul>
-        </div>
-        </div>
+
+       <div class="menu-container" data-menu>
+           <div class="menu-container-wrapper wrapper">
+               
+           <button class="button__menu-close" type="button" data-menu-close>
+               <svg width="40" height="40">
+                   <use href="./images/sprite.svg#icon-close-menu"></use>
+               </svg>
+           </button>
+
+           <ul class="menu__list list">
+               <li class="menu__list__item">
+                   <a class="menu__list__link link" href="./index.html">Студия</a>
+               </li>
+               <li class="menu__list__item">
+                   <a class="menu__list__link link" href="./portfolio.html">Портфолио</a>
+               </li>
+               <li class="menu__list__item">
+                   <a class="menu__list__link link" href="">Контакты</a>
+               </li>
+           </ul>
+
+           <ul class="menu__contact link list">
+               <li class="menu__contact__item">
+                   <a href="tel:+380961111111" class="menu__contact__link-tel link">+38 096 111 11 11</a>
+               </li>
+               <li class="menu__contact__item">
+                   <a href="mailtu:info@devstudio.com" class="menu__contact__link-imail link">info@devstudio.com</a>
+               </li>
+           </ul>
+
+           <ul class="menu__social link list">
+               <li class="menu__social__item">
+                   <a href="" class="menu__social__link link">Instagram</a>
+               </li>
+               <li class="menu__social__item">
+                   <a href="" class="menu__social__link link">Twitter</a>
+               </li>
+               <li class="menu__social__item">
+                   <a href="" class="menu__social__link link">Facebook</a>
+               </li>
+               <li class="menu__social__item">
+                   <a href="" class="menu__social__link link">LinkedIn</a>
+               </li>
+           </ul>
+       </div>
+    </div>
     </header>
-    <main>
-        <!--Блок герой-->
+      <main>
 
-<!--  <section class="hero  background">
+        <section class="hero  background">
 
             <div class="wrapper">
                 <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="button">Заказать услугу</button>
             </div>
 
-        </section>   -->
+        </section>
 
      
-   <!--     <section class="publicity section">
+  <!--      <section class="publicity section">
             <div class="wrapper">
                 <h2 class="publicity__title visually-hidden">Почему вы захотите остаться с нами</h2>
 
@@ -180,10 +180,10 @@
 
                 </ul>
             </div>
-        </section>-->
+        </section>
 
-        <!--Чем мы занимаемся-->
-    <!--    <section class="works section">
+        <!--Чем мы -->
+     <!--   <section class="works section">
             <div class="wrapper">
                 <h2 class="works__title">Чем мы занимаемся</h2>
                 <ul class="works__images list">
@@ -208,7 +208,7 @@
         </section>-->
 
         <!--Наша команда-->
-     <!--   <section class="team section">
+   <!--     <section class="team section">
             <div class="wrapper">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
@@ -377,7 +377,7 @@
         </section>-->
         
         <!-- Клиенты  -->
-      <!--  <section class="clients section">
+   <!--     <section class="clients section">
             <div class="wrapper">
                 <h2 class="clients__title">Постоянные клиенты</h2>
 
@@ -437,15 +437,16 @@
 
     </main>
     <!--Подвал сайта-->
- <!--   <footer class="footer">
+   <!-- <footer class="footer">
 
         <div class="wrapper relations">
-    <div class="footer__link">
 
             <div class="footer__relations">
+
                 <a href="./index.html" class="logo footer-logo link">
                     Web<span class="footer-brand">Studio</span>
                 </a>
+
                 <address>
                     <ul class="address list">
                         <li class="address__item">
@@ -460,11 +461,13 @@
                         </li>
                     </ul>
                 </address>
-            </div>
 
+            </div>
             <div class="footer-connection">
-            <h2 class="footer-headline">присоединяйтесь</h2>
-            <ul class="reference list">
+
+                <h2 class="footer-headline">присоединяйтесь</h2>
+
+                    <ul class="reference list">
 
                         <li class="reference__link">
                             <a href="" class="reference__imail">
@@ -498,9 +501,8 @@
                             </a>
                         </li>
 
-            </ul>
+                    </ul>
             </div>
-     </div>
             <form class="footer-form" metod="get" autocomplete="off">
             <div class="blank">
             <h3 class="blank__title">Подпишитесь на рассылку</h3>
@@ -517,7 +519,6 @@
                
             </form>
         </div>
-        
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                   
@@ -579,8 +580,21 @@
               </div>
           </div>
    
-    </footer> -->
- 
+    </footer>
+    <script>
+        (() => {
+            document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+                e.preventDefault();
+
+             new FormData(e.currentTarget).forEach((value, name) =>
+             console.log(`${name}: ${value}`),
+             );   e.currentTarget.reset();
+               
+            });
+        })();
+    </script>
    <!-- <script>
         const {height: headerHeight} = document
         .querySelector(".header")
@@ -588,8 +602,6 @@
 
         document.body.style.paddingTop = `${headerHeight}px`;
     </script>-->
-    
-        
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>

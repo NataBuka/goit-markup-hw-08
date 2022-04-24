@@ -1,9 +1,6 @@
 
-    
- 
-
   
-    
+
     .menu-container {
     position: absolute;
     left: 0;
@@ -24,9 +21,7 @@
      visibility: visible;
      pointer-events: auto;
     }
-    }
-
-
+}
 
 .menu-container-wrapper {
     position: relative;
@@ -42,7 +37,7 @@
     &:focus,
     &:hover {
       color: var(--color-brand);
-    }
+}
 }
 
 .menu__list__item {
@@ -100,10 +95,4 @@
 .menu__social__item:not(:nth-child(1)) {
   padding-left: 10px;
 }
-//@media screen and(min-width:$tablet) {
-  // //    display: flex;
-    //   justify-content: space-between;
-    //   align-items: center;
-  // }
 
-//}

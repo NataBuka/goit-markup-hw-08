@@ -19,104 +19,53 @@
 </head>
 
 <body>
-    <header class="header">
-        <!--Навигация-->
-        <div class="container-header wrapper">
-         
-            <nav class="site-nav">
-               
-                <a href="./index.html" class="logo link">
-                    Web<span class="logo__text">Studio</span>
-                </a>
-            
-                <ul class="navigation list">
-                    <li class="navigation__item">
-                        <a href="./index.html" class="navigation__link link">Студия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./portfolio.html" class="navigation__link link current portfolio">Портфолио</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./contacts.html" class="navigation__link link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-           
-            <ul class="connection list">
+<header class="header">
 
-                <li class="connection__item">
-                    <a href="mailtu:info@devstudio.com" class="connection__link link" target="_blank">
-                        <svg class="connection__icon imail">
-                            <use href="./images/sprite.svg#icon-imail"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
+    <!--Навигация-->
+    <div class="container-header wrapper">
 
-                <li class="connection__item">
-                    <a href="tel:+380961111111" class="connection__link link">
-                        <svg class="connection__icon smartphone">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
+        <nav class="site-nav">
+            <a href="./index.html" class="logo link">
+                Web<span class="logo__text">Studio</span>
+            </a>
+            <ul class="navigation list">
+                <li class="navigation__item">
+                    <a href="./index.html" class="navigation__link link">Студия</a>
                 </li>
-
-            </ul>
-            <button type="button" class="button__menu" aria-expanded="false"
-            data-menu-open aria-controls="menu-container">
-                <svg class="button__menu__mobile" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="button__menu__mobile__menu" href="./images/sprite.svg#icon-menu40px"></use>
-                </svg>
-            </button>
-
-        </div>
-        <div class="menu-container" id="menu-container" data-menu>
-        <div class="wrapper menu-container-wrapper">
-            <button type="button" class="button__menu-close" data-menu-close>
-                <svg class="button__menu__mobile" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="button__menu__mobile__close" href="./images/sprite.svg#icon-close40px"></use>
-                </svg>
-            </button>
-        
-            <ul class="menu__list">
-                <li class="menu__list__item">
-                    <a class="menu__list__link  link" href="./index.html">Студия</a>
+                <li class="navigation__item">
+                    <a href="./portfolio.html" class="navigation__link link portfolio current">Портфолио</a>
                 </li>
-                <li class="menu__list__item">
-                    <a class="menu__list__link  link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="menu__list__item">
-                    <a class="menu__list__link  link" href="./contacts.html">Контакты</a>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link link">Контакты</a>
                 </li>
             </ul>
+        </nav>
+
+
+
+        <ul class="connection list">
         
+            <li class="connection__item">
+                <a href="mailtu:info@devstudio.com" class="connection__link link" target="_blank">
+                    <svg class="connection__icon imail">
+                        <use href="./images/sprite.svg#icon-imail"></use>
+                    </svg>info@devstudio.com</a>
+            </li>
         
-            <ul class="menu__contact">
-                <li class="menu__contact__item">
-                    <a class="menu__contact__link-tel  link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="menu__contact__item">
-                    <a class="menu__contact__link-imail  link" href="mailtu:info@devstudio.com">info@devstudio.com</a>
-                </li>    
-            </ul>
+            <li class="connection__item">
+                <a href="tel:+380961111111" class="connection__link link">
+                    <svg class="connection__icon smartphone">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
+            </li>
         
-            <ul class="menu__social">
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">Instagram</a>
-                </li>
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">Twitter</a>
-                </li>
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">Facebook</a>
-                </li>
-                <li class="menu__social__item">
-                    <a class="menu__social__link  link" href="">LinkedIn</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </header>
-    <main>
-        <!--фильтр-->
-        <section class="filter section">
+        </ul>
+
+    </div>
+</header>
+ <!--   <main>
+        фильтр-->
+      <!--  <section class="filter section">
             <h1 class="filter__title visually-hidden">Портфолио</h1>
             <div class="wrapper">
 
@@ -144,9 +93,7 @@
                         <a href="" class="cards__imail link box">
 
                            <div class="cards__box">
-                                <img class="cards__img"
-                                srcset="./images/tehnokrjakimg@1x450.jpg" 
-                                src="./images/tehnokrjak.jpg" alt="страничка сайта в ноутбуке"
+                                <img class="cards__img" src="./images/tehnokrjak.jpg" alt="страничка сайта в ноутбуке"
                                 width="370" height="294">
                                 <div class="cards__overlay">
                                 <p class="cards__par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium similique earum assumenda
@@ -326,8 +273,8 @@
 
             </div>
         </section>
-    </main>
-    <footer class="footer">
+    </main>-->
+   <!-- <footer class="footer">
     
         <div class="wrapper relations">
     
@@ -410,7 +357,7 @@
             </form>
         </div>
     
-    </footer>
+    </footer>-->
 </body>
 
 </html>
