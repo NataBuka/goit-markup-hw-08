@@ -4,21 +4,20 @@
     position: relative;
     padding: 10px 0;
     border-bottom: 1px solid var(--color-header-line);
-}
 
 
-
-@media screen and(min-width:$tablet){
-    .header{    
-padding: 21px 0;
-    }   
+@media screen and(min-width:$tablet){ 
+padding: 21px 0;    
 }
 
 @media screen and(min-width:$desktop){
-    .header{    
-padding: 24px 0;
-    }   
+top: 0; 
+left: 0;          
+padding: 32px 0;    
 }
+
+}
+
 
 .container-header{
     display: flex;

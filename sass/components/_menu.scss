@@ -1,18 +1,17 @@
 
   
 
-    .menu-container {
+.menu-container {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     text-align: left;
-    font-size: 20px;
     background-color: var(--color-bcg-site);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -25,12 +24,16 @@
 
 .menu-container-wrapper {
     position: relative;
-    padding: 48px 0;
+    padding: 48px;
+
+    
 }
 
 .menu__list {
-  margin-bottom: 306px;
+  margin-bottom: 199px;
 }
+
+
 .menu__list__link {
     color: var(--color-title-text);
 
@@ -50,7 +53,7 @@
 }
 
 .menu__contact {
-  margin-bottom: 64px;
+  margin-bottom: 64px; 
 }
 
 .menu__contact__item {
