@@ -182,44 +182,111 @@
             </div>
         </section>
 
-      <!--   Чем мы -->
+              <!--Чем мы -->
        <section class="works section">
             <div class="wrapper">
                 <h2 class="works__title">Чем мы занимаемся</h2>
                 <ul class="works__images list">
 
                     <li class="works__item">
-                    <picture>
-                        <source srcset="./images/box-a/" media="" sizes="" type="" />
-                        <source srcset="" media="" sizes="" type="" />
-                        <img src="./images/works/box-a.jpg" alt="Человек что-то печатает на планшете" />
-                      </picture>
-                            <p class="works__text">Десктопные приложения</p>
+
+                        <picture>
+
+                           <source srcset="./images/works/box-a.jpg 1x, ./images/works/box-a@2x.jpg 2x" 
+                              media="(min-width:1200px)"/>
+
+                           <source srcset="./images/works/box-a.Webp 1x, ./images/works/box-a@2x.Webp 2x"
+                              media="(min-width:1200px)"
+                              type="image/Webp"/>
+
+                           <img src="./images/works/box-a.jpg" alt="Человек что-то печатает на планшете" width="370"
+                              height="294"/>
+
+                        </picture>
+
+                        <p class="works__text">Десктопные приложения</p>
+
                     </li>
 
-                    <li class="works__item"><img src="./images/box2.jpg" alt="Телефон в руках у человека" width="370"
-                            height="294">
-                           <p class="works__text">Мобильные приложения</p>
+                    <li class="works__item">
+
+                        <picture>
+
+                            <source srcset="./images/works/box-b.jpg 1x, ./images/works/box-b@2x.jpg 2x" 
+                            media="(min-width:1200px)"/>
+    
+                            <source srcset="./images/works/box-b.Webp 1x, ./images/works/box-b@2x.Webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/Webp"/>
+    
+                            <img src="./images/works/box-a.jpg" alt="Телефон в руках у человека" width="370"
+                            height="294"/>
+                            
+                        </picture>
+
+                        <p class="works__text">Мобильные приложения</p>
+
                     </li>
 
-                    <li class="works__item"><img src="./images/box3.jpg" alt="В руках у человека планшет" width="370"
-                            height="294">
-                           <p class="works__text">Дизайнерские решения</p>
+                    <li class="works__item">
+
+                        <picture>
+
+                            <source srcset="./images/works/box-c.jpg 1x, ./images/works/box-c@2x.jpg 2x" 
+                            media="(min-width:1200px)"/>
+    
+                            <source srcset="./images/works/box-c.Webp 1x, ./images/works/box-c@2x.Webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/Webp"/>
+    
+                            <img src="./images/works/box-c.jpg" alt="В руках у человека планшет" width="370"
+                            height="294"/>
+                            
+                        </picture>
+
+                        <p class="works__text">Дизайнерские решения</p>
+
                     </li>
 
                 </ul>
             </div>
-        </section>-->
+        </section>
 
         <!--Наша команда-->
-   <!--     <section class="team section">
+      <section class="team section">
             <div class="wrapper">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
 
                     <li class="team__card">
-                        <img class="team__img" src="./images/igordemjanenko.jpg" alt="Игорь Демьяненко" width="270"
-                        height="260">
+
+                        <picture>
+
+                            <source srcset="./images/team/igordemjanenko/mobile.jpg 1x, ./images/team/igordemjanenko/mobile@2x.jpg 2x" 
+                            media="(max-width:767px)"/>
+                                
+                            <source srcset="./images/team/igordemjanenko/mobile.webp 1x, ./images/team/igordemjanenko/mobile@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/webp"/>
+
+                            <source srcset="./images/team/igordemjanenko/tablet.jpg 1x, ./images/team/igordemjanenko/tablet@2x.jpg 2x" 
+                            media="(min-width:768px)"/>
+                                
+                            <source srcset="./images/team/igordemjanenko/tablet.webp 1x, ./images/team/igordemjanenko/tablet@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/Webp"/>
+
+                            <source srcset="./images/team/igordemjanenko/desctop.jpg 1x, ./images/team/igordemjanenko/desctop@2x.jpg 2x" 
+                            media="(min-width:1200px)"/>
+                                
+                            <source srcset="./images/team/igordemjanenko/desctop.webp 1x, ./images/team/igordemjanenko/desctop@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/Webp"/>
+                            
+                            <img class="team__img" src="./images/team/igordemjanenko/desctop.jpg" alt="Игорь Демьяненко">
+
+                        </picture>
+
                         <div class="team__meta">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p class="team__text">Product Designer</p>
@@ -261,7 +328,33 @@
                     </li>
 
                     <li class="team__card">
-                        <img class="team__img" src="./images/olgarepina.jpg" alt="Ольга Репина" width="270" height="260">
+                        <picture>
+
+                            <source srcset="./images/team/olgarepina/mobile.jpg 1x, ./images/team/olgarepina/mobile@2x.jpg 2x" 
+                            media="(max-width:767px)"/>
+                                
+                            <source srcset="./images/team/olgarepina/mobile.webp 1x, ./images/team/olgarepina/mobile@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/Webp"/>
+
+                            <source srcset="./images/team/olgarepina/tablet.jpg 1x, ./images/team/olgarepina/tablet@2x.jpg 2x" 
+                            media="(min-width:768px)"/>
+                                
+                            <source srcset="./images/team/olgarepina/tablet.webp 1x, ./images/team/olgarepina/tablet@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/Webp"/>
+
+                            <source srcset="./images/team/olgarepina/desctop.jpg 1x, ./images/team/olgarepina/desctop@2x.jpg 2x" 
+                            media="(min-width:1200px)"/>
+                                
+                            <source srcset="./images/team/olgarepina/desctop.webp 1x, ./images/team/olgarepina/desctop@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/Webp"/>
+                            
+                            <img class="team__img" src="./images/team/olgarepina/desctop.jpg" alt="Ольга Репина">
+
+                        </picture>
+                    
                         <div class="team__meta">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -299,8 +392,34 @@
                     </li>
 
                     <li class="team__card">
-                        <img class="team__img" src="./images/nikolaytarasov.jpg" alt="Николай Тарасов" width="270"
-                            height="260">
+
+                        <picture>
+
+                            <source srcset="./images/team/nikolaytarasov/mobile.jpg 1x, ./images/team/nikolaytarasov/mobile@2x.jpg 2x" 
+                            media="(max-width:767px)"/>
+                                
+                            <source srcset="./images/team/nikolaytarasov/mobile.webp 1x, ./images/team/nikolaytarasov/mobile@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/Webp"/>
+
+                            <source srcset="./images/team/nikolaytarasov/tablet.jpg 1x, ./images/team/nikolaytarasov/tablet@2x.jpg 2x" 
+                            media="(min-width:768px)"/>
+                                
+                            <source srcset="./images/team/nikolaytarasov/tablet.webp 1x, ./images/team/nikolaytarasov/tablet@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/Webp"/>
+
+                            <source srcset="./images/team/nikolaytarasov/desctop.jpg 1x, ./images/team/nikolaytarasov/desctop@2x.jpg 2x" 
+                            media="(min-width:1200px)"/>
+                                
+                            <source srcset="./images/team/nikolaytarasov/desctop.webp 1x, ./images/team/nikolaytarasov/desctop@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/Webp"/>
+                            
+                            <img class="team__img" src="./images/team/nikolaytarasov/desctop.jpg" alt="Николай Тарасов">
+
+                        </picture>
+
                         <div class="team__meta">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -338,8 +457,33 @@
                     </li>
 
                     <li class="team__card">
-                        <img class="team__img" src="./images/mihailermakov.jpg" alt="Михаил Ермаков" width="270"
-                            height="260">
+                        <picture>
+
+                            <source srcset="./images/team/mihailermakov/mobile.jpg 1x, ./images/team/mihailermakov/mobile@2x.jpg 2x" 
+                            media="(max-width:767px)"/>
+                                
+                            <source srcset="./images/team/mihailermakov/mobile.webp 1x, ./images/team/mihailermakov/mobile@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/Webp"/>
+
+                            <source srcset="./images/team/mihailermakov/tablet.jpg 1x, ./images/team/mihailermakov/tablet@2x.jpg 2x" 
+                            media="(min-width:768px)"/>
+                                
+                            <source srcset="./images/team/mihailermakov/tablet.webp 1x, ./images/team/mihailermakov/tablet@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/Webp"/>
+
+                            <source srcset="./images/team/mihailermakov/desctop.jpg 1x, ./images/team/mihailermakov/desctop@2x.jpg 2x" 
+                            media="(min-width:1200px)"/>
+                                
+                            <source srcset="./images/team/mihailermakov/desctop.webp 1x, ./images/team/mihailermakov/desctop@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/Webp"/>
+                            
+                            <img class="team__img" src="./images/team/mihailermakov/desctop.jpg" alt="Михаил Ермаков">
+
+                        </picture>
+                    
                         <div class="team__meta">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
@@ -378,7 +522,7 @@
 
                 </ul>
             </div>
-        </section>-->
+        </section>
         
         <!-- Клиенты  -->
    <!--     <section class="clients section">

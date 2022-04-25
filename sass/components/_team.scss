@@ -58,20 +58,38 @@
     .team__list {
       display: flex;
       flex-wrap: wrap;
+      margin-top: -15px;
+      margin-bottom: -15px;
     }
     
     .team__card {
-      width: calc(100% - (4 * 15px) / 2);
+      flex-basis: calc(100% - (4 * 15px) / 2);
       max-width: 354px;
     }
 
-
-    .team__card:nth-last-child(odd) {
-     margin-left: 30px;
+    @media screen and(min-width:$tablet) and(max-width:1199px){
+    
+  
+     .team__card:nth-child(odd) {
+        margin-right: 15px;
+      }
+  
+     .team__card:nth-child(even) {
+        margin-left: 15px;
+      }
+  
+     .team__card:not(:nth-last-child(-n+2)) {
+        margin-bottom: 30px;
+      }
     }
 
-    .team__card:nth-last-child(-n+2) {
+
+    /*.team__card:nth-last-child(odd) {
+     margin-left: 30px;
+    }*/
+
+    /*.team__card:nth-last-child(-n+2) {
       margin-bottom: 30px;
-     }
+     }*/
     
   }
