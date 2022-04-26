@@ -1,32 +1,69 @@
+
+
+
 .vip {
   display: flex;
+  
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  padding-right: -15px;
+  padding-left: -15px;
+  justify-content: center;
 }
+
 
 .vip__logo {
   width: calc((100% - 4 * 15px) / 2);
   height: 92px;
-  @media screen and(min-width:$tablet) {
+ // margin: 15px;
+}
+@media screen and(max-width:767px) {
+  
+
+.vip__logo:not(:nth-last-child(-n+2)) {
+  margin-bottom: 30px;
+}
+
+.vip__logo:nth-child(odd) {
+  margin-right: 30px;
+}
+}
+
+@media screen and(min-width:$tablet) {
+  .vip__logo {
     width: calc((100% - 6 * 15px) / 3);
-    
   }
-  & {
-    margin-right: 15px;
-    margin-left: 15px;
+}
+
+@media screen and(min-width:$tablet) and(max-width:1199px) {
+  .vip__logo:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
   }
 
-  &:not(:nth-last-child(-n+2)) {
-    margin-bottom: 30px;
+  .vip__logo:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+
+@media screen and(min-width:$desktop) {
+  .vip {
+    flex-wrap: nowrap;
+  }
+
+  .vip__logo {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+
+  .vip__logo:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 
 .vip__link {
     padding: 16px 52px;
-    @media screen and(min-width:$tablet) {
-      padding: 16px 60px;
+    @media screen and(min-width:$desktop) {
+      padding: 16px 32px;
     }
     display: flex;
     width: 100%;
@@ -45,14 +82,20 @@
       }  
 }
 
+@media screen and(max-width:479px) {
+  .vip__link {
+    padding: 5px;
+  }
+}
+
 .clients__title {
   @include section-title-font();
 }
 
 .vip__imail {
   display: flex;
-  width: 106px;
-  height: 60px;
+  //width: 106px;
+  //height: 60px;
   fill: currentColor;
   background-repeat: no-repeat;
   background-size: contain;

@@ -1,10 +1,11 @@
 .footer-connection {
-  margin-bottom: 60px;
+   margin-bottom: 20px;
 }
 
 .reference {
     display: flex;
     justify-content: center;
+    
 }
 
 .reference__link:not(:last-child) {
@@ -43,10 +44,10 @@
 
   .footer-headline{
     @include footer-title-font();
-    @media screen and(min-width:$tablet) {
-      line-height: 1.72;
+   // @media screen and(min-width:$tablet) {
+     // line-height: 1.72;
       
-    }
+    //}
   }
 
   

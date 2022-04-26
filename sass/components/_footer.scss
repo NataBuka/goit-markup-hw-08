@@ -1,10 +1,12 @@
 .footer {
-        padding-top: 60px;
-        padding-bottom: 60px;
+       // padding-top: 60px;
+      //  padding-bottom: 60px;
         background-color: var(--color-secondary-bcg-site);
         color: var(--color-bcg-site);  
-        display: flex;
-        align-items: center;
+      
+        
+     //   display: flex;
+      //  align-items: center;
       
 }
 
@@ -16,15 +18,16 @@
 
 .footer-brand {
   color: var(--color-bcg-site);
-}  
+} 
 
 @media screen and(min-width:$tablet) {
-  .footer__link {
+  .footer__contacts {
     display: flex;
     justify-content: space-around;
   }
-  
 }
+
+
 
   
   

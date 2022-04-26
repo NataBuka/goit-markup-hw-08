@@ -1,6 +1,6 @@
 .blank__wrapper {
     position: relative;
-    margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 
@@ -14,7 +14,6 @@
     left: 16px;
     @media screen and(min-width:$tablet) {
       left: 168px;
-      
     }
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,7 +78,7 @@
     fill: var(--color-bcg-site);
   }
 
-  .blank__img {
+ .blank__img {
     fill: var(--color-bcg-site);
     background-size: contain;
   }

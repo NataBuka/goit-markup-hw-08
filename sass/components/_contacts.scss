@@ -1,14 +1,11 @@
 .contacts {
     display: flex;
     justify-content: center;
+    
   }
 
-  /*.contacts__item:not(:last-child) {
-    margin-bottom: 30px;
-  }*/
-
-  .contacts__link:not(:last-child) {
-    margin-bottom: 30px;
+  .contacts__item:not(:last-child) {
+    margin-right: 10px;
   }
 
 

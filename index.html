@@ -288,20 +288,20 @@
                         </picture>
 
                         <div class="team__meta">
-                        <h3 class="team__name">Игорь Демьяненко</h3>
-                        <p class="team__text">Product Designer</p>
+                            <h3 class="team__name">Игорь Демьяненко</h3>
+                            <p class="team__text">Product Designer</p>
 
-                        <ul class="contacts list">
+                            <ul class="contacts list">
 
-                            <li class="contacts__item">
-                                <a class="contacts__link" href="">
-                                    <svg class="contacts__imail">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
+                                  <li class="contacts__item">
+                                      <a class="contacts__link" href="">
+                                          <svg class="contacts__imail">
+                                              <use href="./images/sprite.svg#icon-instagram"></use>
+                                          </svg>
+                                      </a>
+                                  </li>
 
-                            <li class="contacts__item">
+                             <li class="contacts__item">
                                     <a class="contacts__link" href="">
                                         <svg class="contacts__imail">
                                             <use href="./images/sprite.svg#icon-twitter"></use>
@@ -581,14 +581,16 @@
 
                 </ul>
             </div>
-        </section>-->
+        </section>
 
     </main>
     <!--Подвал сайта-->
-  <!--  <footer class="footer">
+     <footer class="footer section">
 
         <div class="wrapper relations">
 
+
+           <div class="footer__contacts">
             <div class="footer__relations">
 
                 <a href="./index.html" class="logo footer-logo link">
@@ -610,7 +612,7 @@
                     </ul>
                 </address>
 
-            </div>
+             </div>
             <div class="footer-connection">
 
                 <h2 class="footer-headline">присоединяйтесь</h2>
@@ -651,22 +653,33 @@
 
                     </ul>
             </div>
-            <form class="footer-form" metod="get" autocomplete="off">
-            <div class="blank">
-            <h3 class="blank__title">Подпишитесь на рассылку</h3>
-            <div class="blank__wrapper"> 
-                <input class="blank__input" type="email" name="e-mail" id="e-mail" placeholder=" ">
-                <label class="blank__label" for="e-mail">E-mail</label>
-            </div>
-            </div>
-            <button class="blank__button" type="submit">Подписаться
+           </div>
+
+           <form class="footer-form" metod="get" autocomplete="off">
+
+                   <div class="blank">
+                       <h3 class="blank__title">Подпишитесь на рассылку</h3>
+                       <div class="blank__wrapper"> 
+                           <input class="blank__input" type="email" name="e-mail" id="e-mail" placeholder=" ">
+                           <label class="blank__label" for="e-mail">E-mail</label>
+                       </div>
+                   </div> 
+
+                   <button class="blank__button" type="submit">Подписаться
                  <svg class="blank__icon">
                     <use class="blank__img" href="./images/sprite.svg#icon-telegram"></use>
                  </svg>
-            </button>
+                   </button>
                
-            </form>
-        </div>-->
+           </form>
+
+
+
+        </div>
+
+
+
+
         <div class="backdrop is-hidden" data-modal>
             <div class="modal wrapper">
                   
@@ -743,7 +756,7 @@
             });
         })();
     </script>
-   <!-- <script>
+ <!---  <script>
         const {height: headerHeight} = document
         .querySelector(".header")
         .getBoundingClientRect();

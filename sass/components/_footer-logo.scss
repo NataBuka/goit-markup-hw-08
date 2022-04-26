@@ -1,0 +1,38 @@
+@media screen and(min-width:$desktop) {
+    .footer {
+        padding-bottom: 0;
+    }
+    .footer__contacts {
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .footer__relations {
+        margin-right: 70px;
+    }
+
+    .relations 
+     {  display: flex;
+       // position: relative;
+    }
+
+    .footer-form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .blank__input {
+        min-width: 358px;
+        margin-right: 12px;
+        
+    }
+    .footer__contacts {
+        margin-right: 93px;
+    }
+
+    .blank__wrapper {
+        margin-bottom: 0;
+    }
+
+
+}
