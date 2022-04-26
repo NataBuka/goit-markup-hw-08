@@ -1625,6 +1625,38 @@ textarea {
   }
 }
 
+.filter {
+  background-color: orangered;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .cards__item {
+    height: 100%;
+    max-width: 354px;
+    -ms-flex-preferred-size: calc(100% - (4 * 15px) / 2);
+        flex-basis: calc(100% - (4 * 15px) / 2);
+  }
+  .cards__item:nth-child(odd) {
+    margin-right: 15px;
+  }
+  .cards__item:nth-child(even) {
+    margin-left: 15px;
+  }
+}
+
+.cards__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .cards__title {
   color: var(--color-title-text);
   font-size: 18px;
@@ -1646,10 +1678,9 @@ textarea {
   border-left: 1px solid var(--color-cards-border);
   border-bottom: 1px solid var(--color-cards-border);
   border-right: 1px solid var(--color-cards-border);
-}
-
-.cards__item:not(:last-child) {
-  margin-bottom: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .cards__imail {
@@ -1675,10 +1706,6 @@ textarea {
       1px 4px 6px rgba(0, 0, 0, 0.16);
     transform: translateY(-6%);
   }*/
-.cards__item {
-  position: relative;
-}
-
 .cards__box {
   position: relative;
   overflow: hidden;
@@ -1699,14 +1726,14 @@ textarea {
 }
 
 .cards__par {
-  width: 100%;
+  min-width: 106px;
   overflow: hidden;
   height: 294px;
-  padding: 77px 24px;
+  padding: 49px 24px 77px;
   text-align: left;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.88;
   color: var(--color-bcg-site);
   background-color: var(--color-cards-overley);
 }
@@ -1717,6 +1744,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .cards__par {
+    padding: 63px 24px;
+  }
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1724,6 +1757,14 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .buttons__buttom {

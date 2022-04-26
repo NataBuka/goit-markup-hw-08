@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    @media screen and(min-width:$tablet) {
+      justify-content: center;
+    }
 }
 
 .buttons__buttom {
