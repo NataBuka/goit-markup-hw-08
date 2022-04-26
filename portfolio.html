@@ -115,9 +115,9 @@
        </div>
     </div>
     </header>
- <!--   <main>
-        фильтр-->
-      <!--  <section class="filter section">
+      <main>
+     
+      <section class="filter section">
             <h1 class="filter__title visually-hidden">Портфолио</h1>
             <div class="wrapper">
 
@@ -145,8 +145,33 @@
                         <a href="" class="cards__imail link box">
 
                            <div class="cards__box">
-                                <img class="cards__img" src="./images/tehnokrjak.jpg" alt="страничка сайта в ноутбуке"
-                                width="370" height="294">
+                            <picture>
+
+                                <source srcset="./images/tehnokrjak/mobile.jpg 1x, ./images/tehnokrjak/mobile@2x.jpg 2x" 
+                                media="(max-width:767px)"/>
+                                    
+                                <source srcset="./images/tehnokrjak/mobile.webp 1x, ./images/tehnokrjak/mobile@2x.webp 2x"
+                                media="(max-width:767px)"
+                                type="image/webp"/>
+    
+                                <source srcset="./images/tehnokrjak/tablet.jpg 1x, ./images/tehnokrjak/tablet@2x.jpg 2x" 
+                                media="(min-width:768px)"/>
+                                    
+                                <source srcset="./images/tehnokrjak/tablet.webp 1x, ./images/tehnokrjak/tablet@2x.webp 2x"
+                                media="(min-width:768px)"
+                                type="image/Webp"/>
+    
+                                <source srcset="./images/tehnokrjak/desctop.jpg 1x, ./images/tehnokrjak/desctop@2x.jpg 2x" 
+                                media="(min-width:1200px)"/>
+                                    
+                                <source srcset="./images/tehnokrjak/desctop.webp 1x, ./images/tehnokrjak/desctop@2x.webp 2x"
+                                media="(min-width:1200px)"
+                                type="image/Webp"/>
+                                
+                                <img class="cards__img" src="./images/tehnokrjak/desctop.jpg" alt="страничка сайта в ноутбуке">
+    
+                            </picture>
+                                
                                 <div class="cards__overlay">
                                 <p class="cards__par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium similique earum assumenda
                                 consequatur numquam in voluptate, sequi maiores, consequuntur sit nulla nisi? Ut molestiae alias, sapiente fugiat
@@ -165,8 +190,33 @@
                     <li class="cards__item">
                         <a href="" class="cards__imail link box">
                             <div class="cards__box">
-                                <img class="cards__img" src="./images/poster.jpg" alt="два футболиста забивают гол" width="370"
-                                    height="294">
+                                <picture>
+
+                                    <source srcset="./images/portfolio/poster/mobile.jpg 1x, ./images/poster/mobile@2x.jpg 2x" 
+                                    media="(max-width:767px)"/>
+                                        
+                                    <source srcset="./images/portfolio/poster/mobile.webp 1x, ./images/poster/mobile@2x.webp 2x"
+                                    media="(max-width:767px)"
+                                    type="image/webp"/>
+        
+                                    <source srcset="./images/portfolio/poster/tablet.jpg 1x, ./images/poster/tablet@2x.jpg 2x" 
+                                    media="(min-width:768px)"/>
+                                        
+                                    <source srcset="./images/portfolio/poster/tablet.webp 1x, ./images/poster/tablet@2x.webp 2x"
+                                    media="(min-width:768px)"
+                                    type="image/Webp"/>
+        
+                                    <source srcset="./images/portfolio/poster/desctop.jpg 1x, ./images/poster/desctop@2x.jpg 2x" 
+                                    media="(min-width:1200px)"/>
+                                        
+                                    <source srcset="./images/portfolio/poster/desctop.webp 1x, ./images/poster/desctop@2x.webp 2x"
+                                    media="(min-width:1200px)"
+                                    type="image/Webp"/>
+                                    
+                                    <img class="cards__img" src="./images/poster/desctop.jpg" alt="два футболиста забивают гол">
+        
+                                </picture>
+                            
                                 <div class="cards__overlay">
                                     <p class="cards__par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium similique
                                         earum assumenda
@@ -325,7 +375,7 @@
 
             </div>
         </section>
-    </main>-->
+    </main>
    <!-- <footer class="footer">
     
         <div class="wrapper relations">
