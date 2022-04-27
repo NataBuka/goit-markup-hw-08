@@ -1734,8 +1734,8 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .cards__item:not(:nth-last-child(-n+3)) {
-    margin-bottom: 30px;
+  .cards__item {
+    margin-right: 30px;
   }
 }
 
