@@ -1,12 +1,24 @@
 .filter{
   background-color: orangered;
 }
+
+@media screen and(max-width:767px){
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+/*.cards {
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
 @media screen and(min-width:$tablet) {
  .cards {
    display: flex;
    flex-wrap: wrap;
-   margin-right: -15px;
-   margin-left: -15px;
+   margin-right: -30px;
+   margin-top: -30px;
  }
 
 
@@ -17,35 +29,22 @@
   }
 }
 
-@media screen and(max-width:767px){
-  .cards__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-}
 
 
-@media screen and(min-width:$tablet) and(max-width:1199px) {
-.cards__item:nth-child(odd) {
-  margin-right: 15px;
-}
 
-.cards__item:nth-child(even) {
-  margin-left: 15px;
-}
-
-
-.cards__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and(min-width:$tablet) {
+.cards__item {
+  margin-top: 30px;
+  margin-right: 30px;
 }
 }
 
 @media screen and(min-width:$desktop) {
-
   .cards__item {
-    margin-right: 30px;
- 
+    max-width: 370px;
+    flex-basis: calc((100% - 6 * 15px) / 3);
   }
+  
 }
 
 .cards__title {

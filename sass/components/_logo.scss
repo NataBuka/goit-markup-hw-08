@@ -2,11 +2,8 @@
   color: var(--color-brand);
   font-family: Raleway, sans-serif;
   @include font(24px,700,1.17);
-
-  @media screen and(min-width:$tablet){
-    margin-right: 50px;
-    
-  }
+  text-align: center;
+ 
 
 
   &__text {

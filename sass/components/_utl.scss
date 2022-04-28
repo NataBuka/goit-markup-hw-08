@@ -60,17 +60,17 @@ img {
 
 
 @media screen and(min-width: $mobile){
-  width: 448px;
+  width: $mobile;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media screen and(min-width: $tablet) {
-    width: 738px;
+    width: $tablet;
 }
 
 @media screen and(min-width:$desktop) {
-    width: 1170px;
+    width: $desktop;
 } 
 }
 

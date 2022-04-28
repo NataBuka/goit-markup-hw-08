@@ -5,6 +5,7 @@
     .footer__contacts {
         justify-content: left;
         align-items: flex-start;
+        margin-right: 33px;
     }
 
     .footer__relations {
@@ -20,21 +21,20 @@
         display: flex;
         align-items: flex-start;
         justify-content: left;
-        padding-right: -15px;
-        padding-left: -15px;
+       // padding-right: -15px;
+        //padding-left: -15px;
     }
+
     .blank__input {
         min-width: 358px;
         margin-right: 12px;
         
     }
-   
-    .footer__contacts {
-        margin-right: 33px;
-    }
 
     .blank__wrapper {
-        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        
     }
 
 

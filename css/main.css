@@ -90,7 +90,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .wrapper {
-    width: 448px;
+    width: 480px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -98,13 +98,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .wrapper {
-    width: 738px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wrapper {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -156,12 +156,7 @@ img {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.17;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 50px;
-  }
+  text-align: center;
 }
 
 .logo__text {
@@ -614,7 +609,12 @@ img {
 .publicity__list {
   margin-left: auto;
   margin-right: auto;
-  max-width: 450px;
+}
+
+@media screen and (max-width: 767px) {
+  .publicity__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -624,7 +624,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: -30px;
+    margin-right: -30px;
     margin-top: -30px;
   }
   .publicity__item {
@@ -636,14 +636,16 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .publicity__item {
+    margin-top: 30px;
     margin-right: 30px;
-  }
-  .publicity__item {
-    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .publicity-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .publicity__item {
     max-width: 270px;
     -ms-flex-preferred-size: calc(100% - (8 * 15px) / 4);
@@ -769,6 +771,12 @@ img {
   margin-right: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;
@@ -776,11 +784,10 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-right: -15px;
-    padding-left: -15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  .team__card {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
   }
 }
 
@@ -789,37 +796,30 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--color-bcg-site);
-  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    margin-right: -30px;
+    margin-top: -30px;
+  }
   .team__card {
-    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
-        flex-basis: calc((100% - 4 * 15px) / 2);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team__card:nth-child(even) {
-    margin-left: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team__card:nth-child(odd) {
-    margin-right: 15px;
+    margin-top: 30px;
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .team__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .team__card {
+    min-width: 270px;
     -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
         flex-basis: calc((100% - 8 * 15px) / 4);
     margin-bottom: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
   .team__card:not(:last-child) {
     margin-right: 30px;
   }
@@ -930,11 +930,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-right: -15px;
-  padding-left: -15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .vip__logo {
@@ -942,27 +937,21 @@ img {
   height: 92px;
 }
 
-@media screen and (max-width: 767px) {
-  .vip__logo:not(:nth-last-child(-n+2)) {
-    margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .vip {
+    margin-right: -30px;
+    margin-top: -30px;
   }
-  .vip__logo:nth-child(odd) {
+  .vip__logo {
+    margin-top: 30px;
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .vip__logo {
-    width: calc((100% - 6 * 15px) / 3);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .vip__logo:not(:nth-last-child(-n+3)) {
-    margin-bottom: 30px;
-  }
-  .vip__logo:not(:nth-child(3n)) {
-    margin-right: 30px;
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 
@@ -1046,6 +1035,10 @@ img {
   color: var(--color-bcg-site);
 }
 
+.footer__relations {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__contacts {
     display: -webkit-box;
@@ -1067,6 +1060,7 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-right: 33px;
   }
   .footer__relations {
     margin-right: 70px;
@@ -1086,24 +1080,23 @@ img {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    padding-right: -15px;
-    padding-left: -15px;
   }
   .blank__input {
     min-width: 358px;
     margin-right: 12px;
   }
-  .footer__contacts {
-    margin-right: 33px;
-  }
   .blank__wrapper {
-    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .address {
   font-style: normal;
-  margin-bottom: 60px;
 }
 
 .address__link:hover, .address__map:hover, .address__link:focus, .address__map:focus, .address__map:hover, .address__map:focus {
@@ -1133,7 +1126,7 @@ img {
 }
 
 .footer-connection {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .reference {
@@ -1200,9 +1193,17 @@ img {
   }
 }
 
-.blank__wrapper {
-  position: relative;
-  margin-bottom: 20px;
+/*.blank__wrapper {
+    position: relative;
+  
+}*/
+@media screen and (max-width: 1199px) {
+  .blank__wrapper {
+    position: relative;
+  }
+  .blank__input {
+    margin-bottom: 20px;
+  }
 }
 
 .blank__title {
@@ -1271,12 +1272,6 @@ img {
   }
 }
 
-.blank__input:not(:placeholder-shown) + .blank__label,
-.blank__input:focus + .blank__label {
-  -webkit-transform: translatey(-220%);
-          transform: translatey(-220%);
-}
-
 @media screen and (min-width: 768px) {
   .blank__input {
     max-width: 450px;
@@ -1302,8 +1297,8 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   position: relative;
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
   padding: 10px 28px;
   text-align: left;
   left: 50%;
@@ -1318,9 +1313,6 @@ img {
 @media screen and (min-width: 1200px) {
   .blank__button {
     position: absolute;
-    bottom: 110px;
-    -webkit-transform: translateX(350px);
-            transform: translateX(350px);
   }
 }
 
@@ -1724,6 +1716,16 @@ textarea {
   background-color: orangered;
 }
 
+@media screen and (max-width: 767px) {
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+/*.cards {
+  margin-left: auto;
+  margin-right: auto;
+}*/
 @media screen and (min-width: 768px) {
   .cards {
     display: -webkit-box;
@@ -1731,8 +1733,8 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -30px;
+    margin-top: -30px;
   }
   .cards__item {
     height: 100%;
@@ -1742,27 +1744,18 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .cards__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .cards__item:nth-child(odd) {
-    margin-right: 15px;
-  }
-  .cards__item:nth-child(even) {
-    margin-left: 15px;
-  }
-  .cards__item:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .cards__item {
+    margin-top: 30px;
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .cards__item {
-    margin-right: 30px;
+    max-width: 370px;
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 

@@ -20,10 +20,15 @@
   color: var(--color-bcg-site);
 } 
 
+.footer__relations {
+  margin-bottom: 60px;
+}
+
 @media screen and(min-width:$tablet) {
   .footer__contacts {
     display: flex;
     justify-content: space-around;
+   
   }
 }
 
