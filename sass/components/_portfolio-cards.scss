@@ -13,9 +13,15 @@
 .cards__item {
   height: 100%;
     max-width: 354px;
-    min-height: 470px;
     flex-basis: calc(100% - (4 * 15px) / 2);
   }
+}
+
+@media screen and(max-width:767px){
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
 }
 
 
@@ -38,6 +44,7 @@
 
   .cards__item {
     margin-right: 30px;
+ 
   }
 }
 
@@ -59,14 +66,20 @@
     border-left: 1px solid var(--color-cards-border);
     border-bottom: 1px solid var(--color-cards-border);
     border-right: 1px solid var(--color-cards-border);
-   
+  @media screen and(min-width:$desktop) {
+    box-sizing: content-box;
+   // width: 322px;
+   // height: 70px;
+  } 
 }
 
 
 
 .cards__imail {
-    display: block;
-  
+   // display: flex;
+   // flex-direction: column;
+   // flex-grow: 1;
+  display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 

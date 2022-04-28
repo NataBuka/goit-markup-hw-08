@@ -19,15 +19,18 @@
     .footer-form {
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: left;
+        padding-right: -15px;
+        padding-left: -15px;
     }
     .blank__input {
         min-width: 358px;
         margin-right: 12px;
         
     }
+   
     .footer__contacts {
-        margin-right: 93px;
+        margin-right: 33px;
     }
 
     .blank__wrapper {
