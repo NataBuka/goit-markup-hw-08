@@ -28,5 +28,9 @@
         &:not(:last-child) {
           margin-bottom: 8px;
         }
+
+        @media screen and(min-width:$desktop) {
+          text-align: left;
+        }
       }
 }

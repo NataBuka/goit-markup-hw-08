@@ -34,7 +34,8 @@
   .buttons__item {
     margin-right: 8px;
   }  
-
+  @media screen and(max-width:767px){
   .buttons .buttons__item + .buttons__item:not(:nth-last-child(-n+2)){
-      margin-bottom: 15px;
-  }
+    margin-bottom: 15px;
+}
+}

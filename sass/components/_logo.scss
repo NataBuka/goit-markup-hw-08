@@ -3,12 +3,21 @@
   font-family: Raleway, sans-serif;
   @include font(24px,700,1.17);
   text-align: center;
- 
+ @media screen and(min-width:$desktop){
+   font-size: 26px;
+ }
 
 
   &__text {
     color: var(--color-logo-text);
     font-family: Raleway, sans-serif;
+  }
+}
+
+.logo__header {
+  margin-right: 93px;
+  @media screen and(min-width:$tablet) {
+    margin-right: 88px;
   }
 }
 

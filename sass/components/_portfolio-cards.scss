@@ -1,5 +1,5 @@
 .filter{
-  background-color: orangered;
+  background-color: rgb(231, 206, 197);
 }
 
 @media screen and(max-width:767px){
@@ -67,12 +67,16 @@
     border-right: 1px solid var(--color-cards-border);
   @media screen and(min-width:$desktop) {
     box-sizing: content-box;
-   // width: 322px;
-   // height: 70px;
+   
   } 
 }
 
-
+@media screen and(min-width:$desktop) {
+  .cards__article {
+  max-width: 354px;
+   min-height: 146px;
+}
+}
 
 .cards__imail {
    // display: flex;
