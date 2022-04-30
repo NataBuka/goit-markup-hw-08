@@ -139,11 +139,19 @@
                     </li>
                 </ul>
 
+
+
+
+
+
+                
+            <div class="wrapper">
                 <ul class="cards list">
 
                     <li class="cards__item">
                         <a href="" class="cards__imail link box">
                             <div class="cards__box">
+                             
                                 <picture>
 
                                     <source srcset="./images/portfolio-cards/tehnokrjak/mobile.jpg 1x, ./images/portfolio-cards/tehnokrjak/mobile@2x.jpg 2x" 
@@ -546,20 +554,22 @@
                         </a>
                     </li>
                 </ul>
-
+            </div>
             </div>
         </section>
     </main>
-   <!-- <footer class="footer">
-    
+    <footer class="footer section">
+
         <div class="wrapper relations">
-    
-            <div class="footer-relations">
-    
+
+
+           <div class="footer__contacts">
+            <div class="footer__relations">
+
                 <a href="./index.html" class="logo footer-logo link">
                     Web<span class="footer-brand">Studio</span>
                 </a>
-    
+
                 <address>
                     <ul class="address list">
                         <li class="address__item">
@@ -574,66 +584,135 @@
                         </li>
                     </ul>
                 </address>
-    
-            </div>
+
+             </div>
             <div class="footer-connection">
-    
+
                 <h2 class="footer-headline">присоединяйтесь</h2>
-    
-                <ul class="reference list">
-    
-                    <li class="reference__link">
-                        <a href="" class="reference__imail">
-                            <svg class="reference__svg">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="reference__link">
-                        <a href="" class="reference__imail">
-                            <svg class="reference__svg">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="reference__link">
-                        <a href="" class="reference__imail">
-                            <svg class="reference__svg">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="reference__link">
-                        <a href="" class="reference__imail">
-                            <svg class="reference__svg">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                </ul>
+
+                    <ul class="reference list">
+
+                        <li class="reference__link">
+                            <a href="" class="reference__imail">
+                                <svg class="reference__svg">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="reference__link">
+                            <a href="" class="reference__imail">
+                                <svg class="reference__svg">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="reference__link">
+                            <a href="" class="reference__imail">
+                                <svg class="reference__svg">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="reference__link">
+                            <a href="" class="reference__imail">
+                                <svg class="reference__svg">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
             </div>
-            <form class="footer-form" autocomplete="off">
-                <div class="blank">
-                    <h3 class="blank__title">Подпишитесь на рассылку</h3>
-                    <div class="blank__wrapper">
-                        <input class="blank__input" type="email" name="e-mail" id="e-mail" placeholder=" ">
-                        <label class="blank__label" for="e-mail">E-mail</label>
-                    </div>
-                </div>
-                <button class="blank__button" type="submit">Подписаться
-                    <svg class="blank__icon">
-                        <use class="blank__img" href="./images/sprite.svg#icon-telegram"></use>
-                    </svg>
-                </button>
-    
-            </form>
+           </div>
+
+           <form class="footer-form" metod="get" autocomplete="off">
+
+                   <div class="blank">
+                       <h3 class="blank__title">Подпишитесь на рассылку</h3>
+                       <div class="blank__wrapper"> 
+                           <input class="blank__input" type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+                           <button class="blank__button" type="submit">Подписаться
+                              <svg class="blank__icon">
+                                 <use class="blank__img" href="./images/sprite.svg#icon-telegram"></use>
+                              </svg>
+                            </button>
+                       </div>
+                   </div> 
+
+                   
+               
+           </form>
+
         </div>
-    
-    </footer>-->
+
+
+
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal wrapper">
+                  
+                  <button data-modal-close class="btn-close">
+                      <svg class="close">
+                      <use href="./images/sprite.svg#icon-close"></use>
+                      </svg>
+                  </button>
+  
+                  <form name="form" class="form js-speaker-form" method="get" autocomplete="off">
+  
+                  <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+                  
+                  <div class="form__field"> 
+                      <label class="form__label" for="name">Имя</label>
+                      <input class="form__input" type="text" name="user-name" id="name" placeholder=" ">  
+                      <svg class="form__image">
+                          <use  href="./images/sprite.svg#icon-person" class="form-img"> </use>
+                      </svg>
+                  </div>
+  
+                  <div class="form__field">
+                     <label class="form__label" for="tel">Телефон</label>
+                      <input class="form__input" type="tel" name="tel" id="tel" placeholder=" ">
+                      <svg class="form__image">
+                          <use href="./images/sprite.svg#icon-phone"></use>
+                      </svg>
+                  </div>
+  
+                  <div class="form__field">
+                      <label class="form__label" for="email">Почта</label>            
+                      <input class="form__input" type="email" name="email" id="email" placeholder=" ">
+                      <svg class="form__image">
+                          <use href="./images/sprite.svg#icon-mail"></use>
+                      </svg>
+                  </div>
+  
+                  <div class="form__field">
+                  <div class="form__item-koment">
+                      <label class="form__label" for="koment">Комментарий</label>
+                          <textarea class="form__input-koment"  placeholder="Введите текст" name="koment" id="koment"></textarea>
+                  </div>
+                  </div>
+  
+                  <div class="check">
+                      <label class="check__label" for="choice">Соглашаюсь с рассылкой и принимаю
+                          <input class="check__input" type="checkbox" name="choice" value="choice" id="choice">
+                          <span class="check__icon"></span>
+                          <a href="" class="check__email">  Условия договора</a>
+                      </label>
+                  </div>
+              
+                  
+  
+                  <button class="form-button" type="submit">Отправить</button>
+                      
+               </form>
+  
+              </div>
+          </div>
+   
+    </footer>
 </body>
 
 </html>

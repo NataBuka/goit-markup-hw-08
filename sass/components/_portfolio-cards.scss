@@ -1,51 +1,46 @@
-.filter{
-  background-color: rgb(231, 206, 197);
-}
-
-@media screen and(max-width:767px){
-  .cards__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 
 /*.cards {
   margin-left: auto;
   margin-right: auto;
 }*/
 
+@media screen and(max-width:767px){
+  .cards__item:not(:last-child) {
+    margin-bottom: var(--whidth-margin-portfolio-cards);
+  }
+}
+
+.cards__item {
+  @media screen and(max-width:767px) {
+   max-width: 450px;
+  }
+
+  //min-height: 404px; 
+  width: 100%;
+
+  @media screen and(min-width:$tablet) {
+   max-width: 354px; 
+   flex-basis: calc(100% / 2 - var(--whidth-margin-portfolio-cards));
+   margin-top: var(--whidth-margin-portfolio-cards);
+   margin-right: var(--whidth-margin-portfolio-cards);
+  }
+
+  @media screen and(min-width:$desktop) {
+    max-width: 370px;
+    flex-basis: calc(100% / 3 - var(--whidth-margin-portfolio-cards));
+  }
+}
+
+
 @media screen and(min-width:$tablet) {
  .cards {
    display: flex;
    flex-wrap: wrap;
-   margin-right: -30px;
-   margin-top: -30px;
+   margin-right: calc(- 1 * var(--whidth-margin-portfolio-cards));
+   margin-top: calc(- 1 * var(--whidth-margin-portfolio-cards));
  }
-
-
-.cards__item {
-  height: 100%;
-    max-width: 354px;
-    flex-basis: calc(100% - (4 * 15px) / 2);
-  }
 }
 
-
-
-
-@media screen and(min-width:$tablet) {
-.cards__item {
-  margin-top: 30px;
-  margin-right: 30px;
-}
-}
-
-@media screen and(min-width:$desktop) {
-  .cards__item {
-    max-width: 370px;
-    flex-basis: calc((100% - 6 * 15px) / 3);
-  }
-  
-}
 
 .cards__title {
     color: var(--color-title-text);
@@ -55,48 +50,57 @@
 }
 
 .cards__text {
-    @include font(16px, 400, 1.87);
+    @include font(16px, 400, 1.88);
     color: var(--color-text);
 }  
 
 .cards__article {
-   // height: 110px;
+    width: 100%;
+    min-height: 70px;
     padding: 20px 24px;
     border-left: 1px solid var(--color-cards-border);
     border-bottom: 1px solid var(--color-cards-border);
     border-right: 1px solid var(--color-cards-border);
-  @media screen and(min-width:$desktop) {
+ /* @media screen and(min-width:$desktop) {
     box-sizing: content-box;
    
-  } 
+  } */
 }
 
-@media screen and(min-width:$desktop) {
+/*@media screen and(min-width:$desktop) {
   .cards__article {
   max-width: 354px;
    min-height: 146px;
 }
-}
+}*/
 
 .cards__imail {
-   // display: flex;
-   // flex-direction: column;
-   // flex-grow: 1;
-  display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   display: block;
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 
-  @media screen and(min-width:$tablet) {
+ @media screen and(min-width:$tablet) {
     .cards__imail {
       height: 100%;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: stretch;
+     //flex-grow: 1;
     }
+
+    //.cards__item:nth-child(1) .cards__article{
+    //  padding: 20px 24px 56px;
+    //}
 
     .cards__article {
       flex-grow: 1;
     }
-    
+
+
   }
+
+
   .cards__imail:hover .cards__overlay,
   .cards__imail:focus .cards__overlay,
   .cards__imail:visited .cards__overlay {
@@ -106,24 +110,39 @@
   }
 
  
-  /*.cards__imail:hover,
+  .cards__imail:hover,
   .cards__imail:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-    transform: translateY(-6%);
-  }*/
+  
+  }
 
  
 
   .cards__box {
     position: relative;
     overflow: hidden;
+    display: block;
   }
 
   .cards__overlay {
     position: absolute;
     top: 0;
     left: 0;
+
+    @media screen and(max-width:767px) {
+     overflow: scroll;
+    }
+
+    @media screen and(min-width:$tablet) {
+     max-width: 354px; 
+     //padding: 49px 24px 77px;
+    }
+
+    @media screen and(min-width:$desktop) {
+      max-width: 370px;
+    }
+
     width: 100%;
     height: 100%;
     transform: translateY(101%);
@@ -132,26 +151,30 @@
   }
 
   .cards__par {
-    min-width: 106px;
+    //width: 450px;
     overflow: hidden;
 
-    @media screen and(min-width:$tablet) {
-      width: 370px;   
-     }
-     
-    height: 294px;
-    padding: 49px 24px 77px;
-
-    @media screen and(min-width:$desktop) {
-      padding: 63px 24px;
-    }
-    
     text-align: left;
     @include font(18px, 400, 1.88);
 
     color: var(--color-bcg-site);
     background-color: var(--color-cards-overley);
+
+  /*  @media screen and(min-width:$tablet) {
+      width: 370px;   
+     }*/
+     
+    //height: 294px;
+    padding: 49px 24px 77px;
+
+    
+    
+    
   }
-
-
+  /*@media screen and(min-width:$desktop) {
+    .cards__par{
+    padding: 63px 24px;
+    line-height: 1.56;
+  }
+  }*/
  
