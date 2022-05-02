@@ -1747,10 +1747,6 @@ textarea {
   }
 }
 
-.cards {
-  background-color: #edbb72;
-}
-
 @media screen and (max-width: 767px) {
   .cards__item:not(:last-child) {
     margin-bottom: 30px;
