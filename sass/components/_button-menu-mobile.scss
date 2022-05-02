@@ -4,7 +4,7 @@
 .button__menu {
     @include button-mini();
     top: 10px;
-    right: 16px;
+    right: 15px; 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
@@ -22,7 +22,6 @@
   top: 10px;
   right: 15px; 
   @include button-mini();
-
   &:focus,
   &:hover {
     fill: var(--color-brand);

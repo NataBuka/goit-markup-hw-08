@@ -1,9 +1,16 @@
 .footer-connection {
-   margin-bottom: 60px;
+  
    @media screen and(min-width:$desktop) {
-   margin-right: 93px;
+    
    margin-bottom: 0;  
    }
+}
+
+.footer__contacts {
+  margin-bottom: 60px;
+  @media screen and(min-width:$desktop) {
+    margin-right: 93px;
+  }
 }
 
 .reference {

@@ -17,8 +17,8 @@
   .publicity-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-top: -30px;
+    margin-left: calc( -1 * var( --whidth-margin-portfolio-cards));
+    margin-top: calc( -1 * var( --whidth-margin-portfolio-cards));
   }
 
 
@@ -31,8 +31,8 @@
 
   @media screen and(max-width:1199px) {
     .publicity__item {
-    margin-top: 30px;
-    margin-right: 30px;
+    margin-top: var( --whidth-margin-portfolio-cards);
+    margin-left: var( --whidth-margin-portfolio-cards);
     }
   }
 }

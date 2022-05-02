@@ -1,33 +1,24 @@
-
-/*.cards {
-  margin-left: auto;
-  margin-right: auto;
-}*/
+.cards {
+  background-color: rgb(237, 187, 114);
+}
 
 @media screen and(max-width:767px){
   .cards__item:not(:last-child) {
-    margin-bottom: var(--whidth-margin-portfolio-cards);
+    margin-bottom: 30px;
   }
 }
 
 .cards__item {
-  @media screen and(max-width:767px) {
-   max-width: 450px;
-  }
-
-  //min-height: 404px; 
   width: 100%;
 
   @media screen and(min-width:$tablet) {
-   max-width: 354px; 
-   flex-basis: calc(100% / 2 - var(--whidth-margin-portfolio-cards));
-   margin-top: var(--whidth-margin-portfolio-cards);
-   margin-right: var(--whidth-margin-portfolio-cards);
+   flex-basis: calc(100% / 2 - 30px);
+   margin-top: 30px;
+   margin-left: 30px;
   }
 
   @media screen and(min-width:$desktop) {
-    max-width: 370px;
-    flex-basis: calc(100% / 3 - var(--whidth-margin-portfolio-cards));
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
@@ -36,9 +27,9 @@
  .cards {
    display: flex;
    flex-wrap: wrap;
-   margin-right: calc(- 1 * var(--whidth-margin-portfolio-cards));
-   margin-top: calc(- 1 * var(--whidth-margin-portfolio-cards));
- }
+ margin-top: -30px;
+ margin-left: -30px;
+}
 }
 
 
