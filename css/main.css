@@ -1077,8 +1077,10 @@ img {
   color: var(--color-bcg-site);
 }
 
-.footer__relations {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer__relations {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1168,8 +1170,10 @@ img {
   }
 }
 
-.footer__contacts {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
