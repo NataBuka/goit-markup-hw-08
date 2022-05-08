@@ -1,58 +1,42 @@
 .publicity__list {
   margin-left: auto;
   margin-right: auto;
- // max-width: 450px;
- //width: 100%;
+ //max-width: 450px;
+ width: 100%;
+ gap: 30px;
 }
-
-@media screen and(max-width:767px){
-  
 
 .publicity__item:not(:last-child) {
   margin-bottom: 30px;
 }
-}
 
 @media screen and(min-width:$tablet) {
-  .publicity-list {
+
+  .publicity__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc( -1 * var( --whidth-margin-portfolio-cards));
-    margin-top: calc( -1 * var( --whidth-margin-portfolio-cards));
   }
 
-
-  .publicity__item {
-    max-width: 354px;
-    flex-basis: calc(100% - (4 * 15px) / 2);
-   
-
-  }
-
-  @media screen and(max-width:1199px) {
     .publicity__item {
-    margin-top: var( --whidth-margin-portfolio-cards);
-    margin-left: var( --whidth-margin-portfolio-cards);
-    }
+  width: calc((100% - 30px) / 2);
+  max-width: 354px;
+    
   }
 }
 
 
 
 @media screen and(min-width:$desktop) {
-  .publicity-list {
+
+  .publicity__list {
     margin-left: auto;
     margin-right: auto;
   }
 
   .publicity__item{
     max-width: 270px;
-    flex-basis: calc(100% - (8 * 15px) / 4);
+    width: calc((100% - 90px) / 4);
     margin-bottom: 0;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }
 
@@ -87,7 +71,7 @@
 
   .publicity__icon {
     width: 70px;
-     height: 70px;
+    height: 70px;
    }
 
 

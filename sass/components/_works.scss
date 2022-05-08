@@ -8,6 +8,11 @@
     .works {
       padding-top: 0px;
     }
+
+    .works__images {
+      display: flex;
+      justify-content: space-between;
+    }
   
     .works__text {
       position: absolute;
@@ -27,14 +32,6 @@
      flex-basis: calc(100% - (3 * 30px) / 3);
   }
  
-   
- 
-    .works__images {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-  
     .works__title {
     margin-top: 0px;
     margin-bottom: 50px;

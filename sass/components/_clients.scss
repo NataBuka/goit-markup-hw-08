@@ -4,35 +4,29 @@
 .vip {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 
 .vip__logo {
-  width: calc((100% - 4 * 15px) / 2);
+  width: calc((100% - 30px) / 2);
   height: 92px;
+  
  
 }
 
 
-@media screen and(max-width:1199px) {
- .vip {
-   margin-left: calc(var( --whidth-margin-portfolio-cards) * ( -1 ));
-   margin-top: calc(var( --whidth-margin-portfolio-cards) * ( -1 ));
- }
-
+/*@media screen and(max-width:1199px) {
   .vip__logo {
-   margin-top: var( --whidth-margin-portfolio-cards);
-   margin-left: var( --whidth-margin-portfolio-cards);
    max-width: 226px;
  } 
 
 
-}
+}*/
 
 @media screen and(min-width:$tablet) {
   .vip__logo {
-
-    flex-basis: calc((100% - 6 * 15px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -46,11 +40,8 @@
   }
 
   .vip__logo {
-    width: calc((100% - 12 * 15px) / 6);
-  }
-
-  .vip__logo:not(:last-child) {
-    margin-right: 30px;
+    flex-basis: calc((100% - 150px) / 6);
+    max-width: 170px;
   }
 }
 

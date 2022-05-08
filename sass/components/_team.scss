@@ -13,13 +13,14 @@
 .team__list {
   margin-left: auto;
   margin-right: auto;
+  gap: 30px;
 }
 
 
 @media screen and(max-width:767px){
   .team__card:not(:last-child) {
     margin-bottom: 30px;
-  }
+ }
 }
 
 @media screen and(min-width:$tablet) {
@@ -29,9 +30,20 @@
   }
 
   .team__card {
-    flex-basis: calc((100% - 4 * 15px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
+}
+
+
+
+@media screen and(min-width:$desktop) {
+
+    .team__card {
+      min-width: 270px;
+      flex-basis: calc((100% - 90px) / 4);
+      margin-bottom: 0;
+    }
 }
 
 
@@ -42,41 +54,6 @@
     background-color: var(--color-bcg-site);
   
 }
-
-
-  @media screen and(min-width:$tablet) and(max-width:1199px){
-    
-    .team__list {
-      margin-left: calc(-1 * var( --whidth-margin-portfolio-cards));
-      margin-top: calc(-1 * var( --whidth-margin-portfolio-cards));
-    }
-    
-    .team__card {
-      margin-top: var( --whidth-margin-portfolio-cards);
-      margin-left: var( --whidth-margin-portfolio-cards);
-    }
-  }
-
-
-  @media screen and(min-width:$desktop) {
-    .team__list {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .team__card {
-      min-width: 270px;
-      flex-basis: calc((100% - 8 * 15px) / 4);
-      margin-bottom: 0;
-    }
-
-    .team__card:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-
-
 
 
     .team__name {
